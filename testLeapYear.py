@@ -6,3 +6,5 @@ class TestLeapYear(unittest.TestCase):
         self.assertEqual(LeapYear.leap(2004), "Leap Year")
     def testExceptHundred(self):
         self.assertEqual(LeapYear.leap(2100), "Not Leap Year")
+    def testUnlessFourHundred(self):
+        self.assertEqual(LeapYear.leap(2000), "Leap Year")
